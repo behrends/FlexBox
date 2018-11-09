@@ -7,7 +7,15 @@ export default class App extends Component {
       <View style={styles.container}>
         <View style={styles.square} />
         <View style={styles.box} />
-        <View style={styles.boxUp} />
+        <View style={styles.boxUp}>
+          <View
+            style={{
+              width: '100%',
+              height: 30,
+              backgroundColor: 'black'
+            }}
+          />
+        </View>
       </View>
     );
   }
@@ -23,13 +31,13 @@ const styles = StyleSheet.create({
     backgroundColor: 'cyan'
   },
   box: {
-    width: 350,
+    width: '100%',
     height: 100,
     backgroundColor: 'magenta'
   },
   boxUp: {
     width: 100,
-    height: 250,
+    height: '50%',
     backgroundColor: 'yellow'
   }
 });
