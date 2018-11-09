@@ -8,7 +8,6 @@ export default class App extends Component {
         <View style={styles.square} />
         <View style={styles.box} />
         <View style={styles.boxUp} />
-        <View style={styles.boxUp2} />
       </View>
     );
   }
@@ -16,22 +15,19 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1 // flex > 0 --> maximale Ausdehnung
   },
   square: {
-    flex: 1,
+    flex: 2,
+    // flex ermöglicht Größenverhältnisse zwischen Geschwisterkomp.
     backgroundColor: 'cyan'
   },
   box: {
-    flex: 1,
+    flex: 3,
     backgroundColor: 'magenta'
   },
   boxUp: {
-    flex: 1,
+    flex: 5,
     backgroundColor: 'yellow'
-  },
-  boxUp2: {
-    flex: 1,
-    backgroundColor: 'black'
   }
 });
