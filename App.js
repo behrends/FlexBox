@@ -7,15 +7,8 @@ export default class App extends Component {
       <View style={styles.container}>
         <View style={styles.square} />
         <View style={styles.box} />
-        <View style={styles.boxUp}>
-          <View
-            style={{
-              width: '100%',
-              height: 30,
-              backgroundColor: 'black'
-            }}
-          />
-        </View>
+        <View style={styles.boxUp} />
+        <View style={styles.boxUp2} />
       </View>
     );
   }
@@ -23,21 +16,22 @@ export default class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 100
+    flex: 1
   },
   square: {
-    width: 150,
-    height: 150,
+    flex: 1,
     backgroundColor: 'cyan'
   },
   box: {
-    width: '100%',
-    height: 100,
+    flex: 1,
     backgroundColor: 'magenta'
   },
   boxUp: {
-    width: 100,
-    height: '50%',
+    flex: 1,
     backgroundColor: 'yellow'
+  },
+  boxUp2: {
+    flex: 1,
+    backgroundColor: 'black'
   }
 });
