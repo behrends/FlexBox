@@ -6,7 +6,12 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <View style={[styles.box, { backgroundColor: 'cyan' }]} />
-        <View style={[styles.box, { backgroundColor: 'magenta' }]} />
+        <View
+          style={[
+            styles.box,
+            { alignSelf: 'flex-end', backgroundColor: 'magenta' }
+          ]}
+        />
         <View style={[styles.box, { backgroundColor: 'yellow' }]} />
       </View>
     );
@@ -42,3 +47,5 @@ const styles = StyleSheet.create({
 // alignItems: 'flex-start' | 'flex-end' | 'center'
 // | 'stretch' | 'baseline'
 // alignItems hat 'stretch' als Default
+
+// alignSelf überschreibt Darstellung auf Querachse für eine Komponente
