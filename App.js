@@ -6,13 +6,12 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <View style={[styles.box, { backgroundColor: 'cyan' }]} />
-        <View
-          style={[
-            styles.box,
-            { alignSelf: 'flex-end', backgroundColor: 'magenta' }
-          ]}
-        />
+        <View style={[styles.box, { backgroundColor: 'magenta' }]} />
         <View style={[styles.box, { backgroundColor: 'yellow' }]} />
+        <View style={[styles.box, { backgroundColor: 'black' }]} />
+        <View style={[styles.box, { backgroundColor: 'red' }]} />
+        <View style={[styles.box, { backgroundColor: 'green' }]} />
+        <View style={[styles.box, { backgroundColor: 'orange' }]} />
       </View>
     );
   }
@@ -21,9 +20,11 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column', // Ausrichtung der Hauptachse
+    flexDirection: 'row', // Ausrichtung der Hauptachse
     justifyContent: 'center', // Anordnung auf der Hauptachse
-    alignItems: 'center' // Anordnung auf der Querachse
+    alignItems: 'center', // Anordnung auf der Querachse
+    flexWrap: 'wrap', // Umbrüche der Komponenten
+    alignContent: 'center' // Anordnung auf der Querachse (bei wrap)
   },
   box: {
     width: 100,
@@ -49,3 +50,5 @@ const styles = StyleSheet.create({
 // alignItems hat 'stretch' als Default
 
 // alignSelf überschreibt Darstellung auf Querachse für eine Komponente
+
+// flexWrap (ggf. alignContent) ermöglichen Umbrüche der Komponenten
