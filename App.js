@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'column', // Ausrichtung der Hauptachse
-    justifyContent: 'space-evenly', // Anordnung auf der Hauptachse
+    justifyContent: 'center', // Anordnung auf der Hauptachse
     alignItems: 'center' // Anordnung auf der Querachse
   },
   box: {
@@ -34,9 +34,11 @@ const styles = StyleSheet.create({
 // flexDirection hat 'column' als Default
 
 // justifyContent legt Darstellung auf der Hauptachse fest
-// justifyContent: 'flex-start' | 'flex-end' | 'center' | 'space-around' | 'space-between' | 'space-evenly'
+// justifyContent: 'flex-start' | 'flex-end' | 'center'
+//    | 'space-around' | 'space-between' | 'space-evenly'
 // justifyContent hat 'flex-start' als Default
 
 // alignItems für Darstellung auf der Querachse (entgegen Hauptachse)
-// alignItems: 'flex-start' | 'flex-end' | 'center' | 'stretch' | 'baseline'
+// alignItems: 'flex-start' | 'flex-end' | 'center'
+// | 'stretch' | 'baseline'
 // alignItems hat 'stretch' als Default
