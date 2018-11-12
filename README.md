@@ -6,3 +6,5 @@ Beispiel-App für den Abschnitt über das FlexBox-Layout des [Video-Kurses zu Re
 1. Ins Projektverzeichnis wechseln: `cd FlexBox`
 1. npm-Packages für das Projekt installieren: `npm install`
 1. React Native Packager starten mit `expo start` 
+
+![Screenshots der App](./assets/AppScreenshots.png)
