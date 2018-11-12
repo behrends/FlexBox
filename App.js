@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
 
 // Jede View ist bereits ein FlexContainer und hat das FlexBox-Layout
 
-// FlexBox-Layout - wichtige Styling-Eigenschaften:
+// wichtigste Eigenschaften: flexDirection, justifyContent, alignItems
+
 // flexDirection legt Ausrichtung der Hauptachse fest
 // flexDirection: 'row' | 'column' | 'row-reverse' | 'column-reverse'
 // flexDirection hat 'column' als Default
@@ -52,3 +53,5 @@ const styles = StyleSheet.create({
 // alignSelf überschreibt Darstellung auf Querachse für eine Komponente
 
 // flexWrap (ggf. alignContent) ermöglichen Umbrüche der Komponenten
+
+// weitere Eigenschaften: (flexGrow, flexShrink, aspectRatio, ...)
