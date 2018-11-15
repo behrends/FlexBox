@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "FlexBox",
-    "description": "This project is really great.",
+    "description": "Beispiel-Projekt zum FlexBox-Layout",
     "slug": "FlexBox",
     "privacy": "public",
     "sdkVersion": "31.0.0",
