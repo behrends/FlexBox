@@ -4,7 +4,6 @@
     "description": "Beispiel-Projekt zum FlexBox-Layout",
     "slug": "FlexBox",
     "privacy": "public",
-    "sdkVersion": "36.0.0",
     "platforms": [
       "ios",
       "android"
